@@ -1,0 +1,241 @@
+body {
+       /*background-image es para imagen de fondo de pantalla*/
+          background-image:url("../imagenes/pasteles.jpg");
+		
+	      font-family:"tahoma","lucida console" ;"courier new";
+	      /*color es para el color de letra*/
+	   font-size:40px;
+	   text-alight
+	   color: #7F8C8D;
+	   font-family:fuente-thunder;
+}
+hr{
+	/*border es para la linea
+	grosor en pixeles, tipo de linea,color*/
+	border:4px solid #90AFAC;
+	/*width es para el ancho de */
+	width:80%;
+	border-radius:5px;
+}
+p{
+	text-align:justify;
+	font-size:20px;
+	color:#D35400;
+	/*FONT-WEIGHT:BOLD ES PARA LAS NEGRITA*/
+	font-weight:bold;
+	/*line-height: es´´para el interlineado*/
+	line-height:1.5;
+	/*letter-spacing: es para el espacio entre las letras*/
+	letter-spacing:2px;
+	
+}
+table,tr,td{
+	/* los siguientes atributos son para
+	los cuadrados de la tabla*/
+	border:1px solid blue;
+	border-spacing:0px;
+	background-color:#EBF5FB;
+	/*los siguientes atributos son para el texto
+	de la tabla*/
+	font-size:20px;
+	color: #1A5276;
+	text-align:center;
+	
+	
+}
+/*clases*/
+.pie{
+	text-align:center;
+	font-size:20px;
+	color:#000000
+	font-weight:bold;
+}
+.encabezado{
+	text-align:center;
+	font-size:35;
+	font-weight:bold;
+}
+/*Divs*/
+div#top{
+	width:100%;
+	height:75px;
+	color:#000000;
+	/*
+	background-image:linear-gradient(#E38C0E,#F19E26);
+	*/
+	/*
+	background-image:radial-gradient(#E38C0E,#F19E26);
+	*/
+	/*
+	background-image:radial-gradient(#E38C0E,#F19E26);
+	*/
+	background-image:url("../imagenes/pasteles5.jpg");
+	font-family:fuente-thunder;
+}
+div#ppag{
+    width:100%;
+	height:75px;
+    background-image:url("../imagenes/pasteles5.jpg");
+}
+/*carrousel para imagenes*/
+.carrousel{
+	width:600px;
+	margin:auto;
+	box-sizing:border-box;
+}
+.contecarrousel{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.itemcarrousel{
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouseltarjeta{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+.contecarrouselcontroller{
+	width:100%;
+	display:flex;
+	justify-content:space-evenly;
+}
+.contecarrouselcontroller> a{
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+.itemcarrouselarrows> a> i{
+	color;white;
+}
+/*cajas de productos*/
+.caja{
+	height:270px;
+	width:250px;
+	background:#F7DA9E;
+	border:1px solid #C38B19;
+	margin:5px;
+	text-align:center;
+	display:inline-block;
+}
+.caja:hover{
+	box-shadow:0 0 10px gold;
+	transform:scale(1.3);
+}
+.caja-texto{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:20px;
+	color:black;
+	font-weight:bold;
+}
+.texto-adicional{
+	padding-top:5px;
+	font-size:15px;
+}
+.caja2{
+	font-size:30px;
+	width:600px;
+	background:#F7DA9E;
+	border:1px solid #C38B19;
+	margin:5px;
+	text-align:center;
+	display:inline-block;
+	
+}
+.navegacion{
+	display:flex;
+	height:100px;
+}
+.navegacion-item{
+	flex:1;
+	color:#fff;
+	font-weight:bold;
+	font-size:25px;
+	display:flex;
+	transition: flex-grow 0.2s;
+	justify-conter:center;
+	align-items:center;
+}
+.navegacion-item:hover{
+	flex-grow:10;
+}
+.navegacion-titulo{
+	margin:0;
+	transform:rotate(-90deg);
+	transition:transform 0.2s 0.2s;
+	font-size:15px;
+	color:blue;
+}
+.navegacion-item:hover .navegacion-titulo{
+	transform:rotate(0);
+}
+.navegacion-item:nth-child(1){
+	background:#85C1E9;
+}
+.navegacion-item:nth-child(2){
+	background:#76D7C4;
+}
+.navegacion-item:nth-child(3){
+	background:#F9E79F;
+}
+.navegacion-item:nth-child(4){
+	background:#D7BDE2;
+}
+.cont{
+	width:600px;
+	background:#F8C682 ;
+	border:1px solid #000000 ;
+	margin:5px;
+	text-align:center;
+	display:flex;
+	justify-content:center;
+	color:black;
+	align-items:center;
+}
+.conts{
+	width:1200px;
+	height:320px;
+	background:#F7DA9E;
+	border:1px solid #000000 ;
+	margin:5px;
+	display:flex;
+	align-items:center;
+	text-align:center;
+	justify-content:center;
+}
+/*tipografias o fuentes*/
+@font-face{
+	font-family:fuente-thunder;
+	src:url(../fuentes/GODOFWAR.ttf);
+	
+}
+@font-face{
+	font-family:fuente-nombre de la fuente;
+	src:url(../fuentes/nombre del texto aqui.xxx);
+	
+}
+
+
+
+
+
